@@ -5,7 +5,7 @@ import time
 
 wifi_on_led = machine.Pin(2, machine.Pin.OUT)
 wifi_off_led = machine.Pin(15, machine.Pin.OUT)
-connecting_led =machine.Pin(4, machine.Pin.OUT)
+connecting_led = machine.Pin(4, machine.Pin.OUT)
 
 expensive_led = machine.Pin(17, machine.Pin.OUT)
 moderate_led = machine.Pin(18, machine.Pin.OUT)
