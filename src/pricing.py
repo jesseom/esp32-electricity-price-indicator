@@ -1,5 +1,6 @@
 # This file handles pricing logic
 from config import CHEAP_THRESHOLD, EXPENSIVE_THRESHOLD
+from mock_data import generate_mock_price
 
 # Function for pricing
 def pricing(price):
@@ -10,3 +11,6 @@ def pricing(price):
     else:
         category = "moderate" # Price between 5c/kWh & 15c/kWh
     return category
+
+if __name__ == "__main__":
+    print(pricing(generate_mock_price()))
